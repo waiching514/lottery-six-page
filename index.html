@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>六合彩抽獎及獎金說明</title>
+    <title>六合彩攪珠及獎金說明</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
             max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2, h3 {
-            color: #333;
+            color: #c00;
+        }
+        h1 {
+            text-align: center;
         }
         table {
             width: 100%;
@@ -23,94 +33,103 @@
             margin: 20px 0;
         }
         th, td {
+            padding: 10px;
             border: 1px solid #ddd;
-            padding: 8px;
             text-align: left;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #b0e0e6;
         }
-        code {
-            background-color: #f4f4f4;
-            padding: 2px 4px;
-            border-radius: 4px;
+        p {
+            margin: 10px 0;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .note {
+            font-style: italic;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <h1>六合彩抽獎及獎金說明</h1>
-    
-    <h2>抽獎</h2>
-    <p>六合彩是一款模擬香港六合彩的遊戲，玩家從1至39的數字中選出6個數字進行投注。每次抽獎會隨機抽出6個主要數字及1個額外數字（稱為「特別號碼」）。中獎結果取決於玩家所選數字與抽獎結果的匹配程度。</p>
-    
-    <h3>抽獎過程</h3>
-    <ul>
-        <li>從1至39的數字中隨機抽出6個主要數字。</li>
-        <li>從剩餘的數字中抽出1個額外數字（特別號碼）。</li>
-        <li>玩家根據其選取的數字與抽獎結果的匹配情況，獲得相應的獎項。</li>
-    </ul>
-    
-    <h2>獎金結構</h2>
-    <p>六合彩設有多個獎項級別，根據匹配的數字數量決定。以下是各獎項的詳細說明（假設總獎金池為 <code>PRIZE_POOL</code>）：</p>
-    
-    <table>
-        <tr>
-            <th>獎項</th>
-            <th>中獎條件</th>
-            <th>獎金分配</th>
-        </tr>
-        <tr>
-            <td>一等獎</td>
-            <td>6個主要數字全中</td>
-            <td>40% 的獎金池</td>
-        </tr>
-        <tr>
-            <td>二等獎</td>
-            <td>5個主要數字 + 特別號碼</td>
-            <td>15% 的獎金池</td>
-        </tr>
-        <tr>
-            <td>三等獎</td>
-            <td>5個主要數字</td>
-            <td>12% 的獎金池</td>
-        </tr>
-        <tr>
-            <td>四等獎</td>
-            <td>4個主要數字 + 特別號碼</td>
-            <td>8% 的獎金池</td>
-        </tr>
-        <tr>
-            <td>五等獎</td>
-            <td>4個主要數字</td>
-            <td>10% 的獎金池</td>
-        </tr>
-        <tr>
-            <td>六等獎</td>
-            <td>3個主要數字 + 特別號碼</td>
-            <td>15% 的獎金池</td>
-        </tr>
-        <tr>
-            <td>七等獎</td>
-            <td>3個主要數字</td>
-            <td>固定獎金（由系統設定）</td>
-        </tr>
-    </table>
-    
-    <h3>獎金分配詳情</h3>
-    <ul>
-        <li>如果某獎項無人中獎，該獎項的獎金將累積至下一次抽獎的獎金池（滾存）。</li>
-        <li>固定獎金（例如七等獎）不依賴獎金池比例，而是由系統預設金額。</li>
-        <li>若有多名玩家中同一獎項，該獎項的獎金將平均分配給所有中獎者。</li>
-    </ul>
-    
-    <h2>其他說明</h2>
-    <ul>
-        <li>抽獎結果完全隨機，模擬真實香港六合彩的機率分佈。</li>
-        <li>玩家需在投注截止時間前提交所選數字。</li>
-        <li>遊戲提供即時結果查詢，玩家可隨時查看中獎情況。</li>
-    </ul>
-    
-    <p>如需更多詳情，請參閱 <a href="https://github.com/LOOHP/LotterySix/wiki/LotterySix-Draw-&-Prizes-Explanation">LotterySix Wiki</a>。</p>
-    <p>插件由LOOHP提供。</p>
+    <div class="container">
+        <h1>六合彩攪珠及獎金說明</h1>
+        
+        <h2>攪珠過程</h2>
+        <p>六合彩是一款基於Minecraft的彩票插件，由LOOHP開發。每期六合彩會從1至39個號碼中隨機抽出6個主號碼及1個特別號碼。以下為攪珠的過程：</p>
+        <ul>
+            <li><strong>投注階段</strong>：玩家可於指定時間內通過指令<code>/ls play</code>進行投注，選擇單式、複式或膽拖投注。</li>
+            <li><strong>攪珠階段</strong>：攪珠於預定時間（例如每週二、四、六的21:35，亞洲/香港時區）進行，系統會隨機抽出6個主號碼及1個特別號碼。攪珠過程會通過聊天訊息實時顯示。</li>
+            <li><strong>派彩階段</strong>：攪珠結束後，系統根據中獎號碼及投注情況計算並派發獎金。中獎玩家可通過<code>/ls play</code>領取獎金。</li>
+        </ul>
+        
+        <h2>獎金結構</h2>
+        <p>六合彩設有七個獎金等級，根據玩家投注的號碼與攪珠結果的匹配情況派發獎金。以下為獎金等級及對應要求：</p>
+        <table>
+            <tr>
+                <th>獎金等級</th>
+                <th>中獎條件</th>
+                <th>獎金金額</th>
+            </tr>
+            <tr>
+                <td>頭獎</td>
+                <td>6個主號碼全中</td>
+                <td>$1,800,000,000（最低）或更高</td>
+            </tr>
+            <tr>
+                <td>二獎</td>
+                <td>5個主號碼 + 特別號碼</td>
+                <td>按頭獎獎池比例分配</td>
+            </tr>
+            <tr>
+                <td>三獎</td>
+                <td>5個主號碼</td>
+                <td>按頭獎獎池比例分配</td>
+            </tr>
+            <tr>
+                <td>四獎</td>
+                <td>4個主號碼 + 特別號碼</td>
+                <td>按頭獎獎池的15倍分配</td>
+            </tr>
+            <tr>
+                <td>五獎</td>
+                <td>4個主號碼</td>
+                <td>按四獎的2倍分配</td>
+            </tr>
+            <tr>
+                <td>六獎</td>
+                <td>3個主號碼 + 特別號碼</td>
+                <td>按五獎的8倍分配</td>
+            </tr>
+            <tr>
+                <td>七獎</td>
+                <td>3個主號碼</td>
+                <td>固定獎金，投注金額的4倍</td>
+            </tr>
+        </table>
+        <p><strong>頭獎說明</strong>：頭獎的最低金額為$1,800,000,000。若無人中頭獎，獎金將滾存至下一期。頭獎最高金額為$9,223,372,036,854,775,807。獎金計算僅頭獎保證最低獎金，其他等級按比例分配。</p>
+        
+        <h2>金多寶說明</h2>
+        <p>金多寶是六合彩的特別獎金機制，旨在增加頭獎的吸引力。當頭獎連續多期無人中獎，獎池累積的金額（即多寶或金多寶）會滾存至下一期，顯著提高頭獎金額。金多寶的具體金額顯示在遊戲介面及公告中（例如“多寶/金多寶: $***”）。若當期為金多寶攪珠，系統會在公告中標註“XX金多寶”，吸引更多玩家參與投注，從而進一步推高獎池。</p>
+        
+        <h2>其他說明</h2>
+        <ul>
+            <li><strong>稅收</strong>：每次投注的15%將從獎池中扣除，存入彩票基金帳戶。</li>
+            <li><strong>投注限制</strong>：玩家可設置每期投注限額，預設為無限制。若達到限額，系統會提示“您已達到投注限額！切勿沉迷賭博”。</li>
+            <li><strong>投注類型</strong>：支援單式（6個號碼）、複式（7個或以上號碼）及膽拖（1-5個膽+配腳）投注。</li>
+            <li><strong>統計數據</strong>：玩家可查看號碼攪出次數及相隔期數，以協助投注決策。</li>
+        </ul>
+        
+        <p class="note">本插件由LOOHP開發，更多資訊請參閱：<a href="https://github.com/LOOHP/LotterySix/wiki/LotterySix-Draw-&-Prizes-Explanation">LOOHP/LotterySix GitHub Wiki</a>。</p>
+    </div>
 </body>
 </html>
