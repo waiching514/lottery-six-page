@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六合彩抽獎及獎金說明</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>六合彩抽獎及獎金說明</h1>
+    
+    <h2>抽獎</h2>
+    <p>六合彩是一款模擬香港六合彩的遊戲，玩家從1至49的數字中選出6個數字進行投注。每次抽獎會隨機抽出6個主要數字及1個額外數字（稱為「特別號碼」）。中獎結果取決於玩家所選數字與抽獎結果的匹配程度。</p>
+    
+    <h3>抽獎過程</h3>
+    <ul>
+        <li>從1至49的數字中隨機抽出6個主要數字。</li>
+        <li>從剩餘的數字中抽出1個額外數字（特別號碼）。</li>
+        <li>玩家根據其選取的數字與抽獎結果的匹配情況，獲得相應的獎項。</li>
+    </ul>
+    
+    <h2>獎金結構</h2>
+    <p>六合彩設有多個獎項級別，根據匹配的數字數量決定。以下是各獎項的詳細說明（假設總獎金池為 <code>PRIZE_POOL</code>）：</p>
+    
+    <table>
+        <tr>
+            <th>獎項</th>
+            <th>中獎條件</th>
+            <th>獎金分配</th>
+        </tr>
+        <tr>
+            <td>一等獎</td>
+            <td>6個主要數字全中</td>
+            <td>40% 的獎金池</td>
+        </tr>
+        <tr>
+            <td>二等獎</td>
+            <td>5個主要數字 + 特別號碼</td>
+            <td>15% 的獎金池</td>
+        </tr>
+        <tr>
+            <td>三等獎</td>
+            <td>5個主要數字</td>
+            <td>12% 的獎金池</td>
+        </tr>
+        <tr>
+            <td>四等獎</td>
+            <td>4個主要數字 + 特別號碼</td>
+            <td>8% 的獎金池</td>
+        </tr>
+        <tr>
+            <td>五等獎</td>
+            <td>4個主要數字</td>
+            <td>10% 的獎金池</td>
+        </tr>
+        <tr>
+            <td>六等獎</td>
+            <td>3個主要數字 + 特別號碼</td>
+            <td>15% 的獎金池</td>
+        </tr>
+        <tr>
+            <td>七等獎</td>
+            <td>3個主要數字</td>
+            <td>固定獎金（由系統設定）</td>
+        </tr>
+    </table>
+    
+    <h3>獎金分配詳情</h3>
+    <ul>
+        <li>如果某獎項無人中獎，該獎項的獎金將累積至下一次抽獎的獎金池（滾存）。</li>
+        <li>固定獎金（例如七等獎）不依賴獎金池比例，而是由系統預設金額。</li>
+        <li>若有多名玩家中同一獎項，該獎項的獎金將平均分配給所有中獎者。</li>
+    </ul>
+    
+    <h2>其他說明</h2>
+    <ul>
+        <li>抽獎結果完全隨機，模擬真實香港六合彩的機率分佈。</li>
+        <li>玩家需在投注截止時間前提交所選數字。</li>
+        <li>遊戲提供即時結果查詢，玩家可隨時查看中獎情況。</li>
+    </ul>
+    
+    <p>如需更多詳情，請參閱 <a href="https://github.com/LOOHP/LotterySix/wiki/LotterySix-Draw-&-Prizes-Explanation">LotterySix Wiki</a>。</p>
+    <p>插件由LOOHP提供。</p>
+</body>
+</html>
