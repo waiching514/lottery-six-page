@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>六合彩攪珠及獎金說明</title>
+    <link rel="icon" type="image/x-icon" href="https://resources.loohpjames.com/images/LotterySix.png">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,7 +26,10 @@
             color: #c00;
         }
         h1 {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }
         table {
             width: 100%;
@@ -62,13 +66,16 @@
 </head>
 <body>
     <div class="container">
-        <h1>六合彩攪珠及獎金說明</h1>
+        <h1>
+            <img src="https://resources.loohpjames.com/images/LotterySix.png" height="50" alt="LotterySix">
+            六合彩攪珠及獎金說明
+        </h1>
         
         <h2>攪珠過程</h2>
-        <p>六合彩是一款基於Minecraft的彩票插件，由LOOHP開發。每期六合彩會從1至39個號碼中隨機抽出6個主號碼及1個特別號碼。以下為攪珠的過程：</p>
+        <p>六合彩 (LotterySix) 是一款基於香港賽馬會六合彩獎券設計的 Minecraft 彩票遊戲。每期六合彩會從1至39個號碼中隨機抽出6個主號碼及1個特別號碼。以下為攪珠的過程：</p>
         <ul>
-            <li><strong>投注階段</strong>：玩家可於指定時間內通過指令<code>/ls play</code>進行投注，選擇單式、複式或膽拖投注。</li>
-            <li><strong>攪珠階段</strong>：攪珠於預定時間（例如每週二、四、六的21:35，亞洲/香港時區）進行，系統會隨機抽出6個主號碼及1個特別號碼。攪珠過程會通過聊天訊息實時顯示。</li>
+            <li><strong>投注階段</strong>：玩家可於指定時間內通過指令<code>/ls play</code>進行投注。每注為 $10,000。</li>
+            <li><strong>攪珠階段</strong>：攪珠於預定時間（每週二、四、六 21:30 香港時區）進行，系統會隨機抽出6個主號碼及1個特別號碼。攪珠過程會通過聊天訊息實時顯示。</li>
             <li><strong>派彩階段</strong>：攪珠結束後，系統根據中獎號碼及投注情況計算並派發獎金。中獎玩家可通過<code>/ls play</code>領取獎金。</li>
         </ul>
         
@@ -77,59 +84,126 @@
         <table>
             <tr>
                 <th>獎金等級</th>
-                <th>中獎條件</th>
+                <th>獲獎資格</th>
+                <th>獲獎資格圖例</th>
                 <th>獎金金額</th>
             </tr>
             <tr>
                 <td>頭獎</td>
                 <td>6個主號碼全中</td>
-                <td>$1,800,000,000（最低）或更高</td>
+                <td>🔴​🔴​🔴​🔴​🔴​🔴 + ⚪</td>
+                <td>視乎該期基金及中獎注數<br>(一注獨中最低 $1,800,000,000)</td>
             </tr>
             <tr>
                 <td>二獎</td>
                 <td>5個主號碼 + 特別號碼</td>
-                <td>按頭獎獎池比例分配</td>
+                <td>🔴​🔴​🔴​🔴​🔴​⚪ + 🟡</td>
+                <td>視乎該期基金及中獎注數</td>
             </tr>
             <tr>
                 <td>三獎</td>
                 <td>5個主號碼</td>
-                <td>按頭獎獎池比例分配</td>
+                <td>🔴​🔴​🔴​🔴​🔴​⚪ + ⚪</td>
+                <td>視乎該期基金及中獎注數</td>
             </tr>
             <tr>
                 <td>四獎</td>
                 <td>4個主號碼 + 特別號碼</td>
-                <td>按頭獎獎池的15倍分配</td>
+                <td>🔴​🔴​🔴​🔴​⚪​⚪ + 🟡</td>
+                <td>$9,600,000</td>
             </tr>
             <tr>
                 <td>五獎</td>
                 <td>4個主號碼</td>
-                <td>按四獎的2倍分配</td>
+                <td>🔴​🔴​🔴​🔴​⚪​⚪ + ⚪</td>
+                <td>$640,000</td>
             </tr>
             <tr>
                 <td>六獎</td>
                 <td>3個主號碼 + 特別號碼</td>
-                <td>按五獎的8倍分配</td>
+                <td>🔴​🔴​🔴​⚪​⚪​⚪ + 🟡</td>
+                <td>$320,000</td>
             </tr>
             <tr>
                 <td>七獎</td>
                 <td>3個主號碼</td>
-                <td>固定獎金，投注金額的4倍</td>
+                <td>🔴​🔴​🔴​⚪​⚪​⚪ + ⚪</td>
+                <td>$40,000</td>
             </tr>
         </table>
-        <p><strong>頭獎說明</strong>：頭獎的最低金額為$1,800,000,000。若無人中頭獎，獎金將滾存至下一期。頭獎最高金額為$9,223,372,036,854,775,807。獎金計算僅頭獎保證最低獎金，其他等級按比例分配。</p>
+        <p><strong>獎金說明</strong>：頭獎的一注獨中最低金額為$1,800,000,000。若無人中頭獎，獎金將滾存至下一期。若果多於一注中頭二三獎，獎金將會平均分配。若果獎金未能足夠支付各級獎金，各等級獎金將會按比例下調。</p>
         
         <h2>金多寶說明</h2>
-        <p>金多寶是六合彩的特別獎金機制，旨在增加頭獎的吸引力。當頭獎連續多期無人中獎，獎池累積的金額（即多寶或金多寶）會滾存至下一期，顯著提高頭獎金額。金多寶的具體金額顯示在遊戲介面及公告中（例如“多寶/金多寶: $***”）。若當期為金多寶攪珠，系統會在公告中標註“XX金多寶”，吸引更多玩家參與投注，從而進一步推高獎池。</p>
+        <p>金多寶是六合彩的特別獎金機制，旨在增加頭獎的吸引力，顯著提高頭獎金額。金多寶通常會在特別節日或活動時舉行，具體金額顯示在遊戲介面及公告中。若當期為金多寶攪珠，系統會在公告中標註「XX金多寶」，吸引更多玩家參與投注，從而進一步推高獎池。</p>
+
+        <h2>注項類型說明</h2>
+        <p>每注為 $10,000，可選擇以下注項類型：</p>
+
+        <h3>單式注項</h3>
+        <p>選擇 6 個不同的號碼。最簡單易明，建議首次參與的玩家使用。</p>
+
+        <h3>複式注項</h3>
+        <p>選擇 7 個或以上不同的號碼。例子：如果選擇了七個號碼 1、2、3、4、5、6 及 7，則可拆分為以下七個投注組合：</p>
+        <table>
+            <tr>
+                <th>投注組合</th>
+            </tr>
+            <tr><td>1+2+3+4+5+6</td></tr>
+            <tr><td>1+2+3+4+5+7</td></tr>
+            <tr><td>1+2+3+4+6+7</td></tr>
+            <tr><td>1+2+3+5+6+7</td></tr>
+            <tr><td>1+2+4+5+6+7</td></tr>
+            <tr><td>1+3+4+5+6+7</td></tr>
+            <tr><td>2+3+4+5+6+7</td></tr>
+        </table>
+
+        <h3>膽拖注項</h3>
+        <p>選擇一至五個號碼作為膽，並選擇其他號碼作為配腳。例子：如果選擇兩個膽號 1 和 2，並選擇配腳 3、4、5、6 及 7，則可拆分為：</p>
+        <table>
+            <tr>
+                <th>膽</th>
+                <th>配腳</th>
+            </tr>
+            <tr>
+                <td>1+2</td>
+                <td>3+4+5+6</td>
+            </tr>
+            <tr>
+                <td>1+2</td>
+                <td>3+4+5+7</td>
+            </tr>
+            <tr>
+                <td>1+2</td>
+                <td>3+4+6+7</td>
+            </tr>
+            <tr>
+                <td>1+2</td>
+                <td>3+5+6+7</td>
+            </tr>
+            <tr>
+                <td>1+2</td>
+                <td>4+5+6+7</td>
+            </tr>
+        </table>
+
+        <h3>財運號碼</h3>
+        <p>不知道要選哪些號碼？讓電腦為你隨機選擇！</p>
+
+        <h2>部分注項單位說明</h2>
+        <p>部分注項單位為 $5,000。適用於 <strong>複式</strong> 及 <strong>膽拖</strong> 注項。所有獎金將根據部分注項單位與注項單位的比例支付。</p>
+
+        <h2>六合彩計算機</h2>
+        <p><a href="https://loohpjames.com/lotterysixcal/ch/?price=10000&choices=39&locked=true&name=%E5%85%AD%E5%90%88%E5%BD%A9" target="_blank">點擊開啟六合彩獎金分配、獲獎資格、機率及投注價格互動式計算器。</a></p>
         
         <h2>其他說明</h2>
         <ul>
-            <li><strong>稅收</strong>：每次投注的15%將從獎池中扣除，存入彩票基金帳戶。</li>
-            <li><strong>投注限制</strong>：玩家可設置每期投注限額，預設為無限制。若達到限額，系統會提示“您已達到投注限額！切勿沉迷賭博”。</li>
-            <li><strong>投注類型</strong>：支援單式（6個號碼）、複式（7個或以上號碼）及膽拖（1-5個膽+配腳）投注。</li>
+            <li><strong>Discord 線下投注</strong>：玩家可透過連結 Discord 帳號在線下通過 Discord 指令<code>/lottery</code>投注及查看六合彩資訊。</li>
+            <li><strong>稅收</strong>：每次投注的15%將從獎池中扣除，存入伺服器彩票基金。</li>
+            <li><strong>投注限制</strong>：玩家可設置每期投注限額，預設為無限制。若達到限額，系統會提示。</li>
             <li><strong>統計數據</strong>：玩家可查看號碼攪出次數及相隔期數，以協助投注決策。</li>
         </ul>
         
-        <p class="note">本插件由LOOHP開發，更多資訊請參閱：<a href="https://github.com/LOOHP/LotterySix/wiki/LotterySix-Draw-&-Prizes-Explanation">LOOHP/LotterySix GitHub Wiki</a>。</p>
+        <p class="note">LotterySix 插件由 LOOHP 開發，更多資訊請參閱：<a href="https://github.com/LOOHP/LotterySix/wiki/LotterySix-Draw-&-Prizes-Explanation">LotterySix Draw & Prizes Explanation</a> (僅提供英文版本)。</p>
     </div>
 </body>
 </html>
